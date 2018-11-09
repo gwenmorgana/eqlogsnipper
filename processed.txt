@@ -1,0 +1,15 @@
+[Tue Aug 21 14:33:18 2018] Channels: 1=General(261),2=Shaman(23),3=Planes(172)
+[Tue Aug 21 14:33:19 2018] Welcome to EverQuest!
+[Tue Aug 21 14:33:19 2018] You have entered The Plane of Tranquility.
+[Tue Aug 21 14:33:19 2018] MESSAGE OF THE DAY: --== Welcome to Project 2002 - Keep your client up to date, run the patcher! - Remember the community always remembers, be kind to your fellow players - If you love the server, consider donating! - http://www.paypal.me/P2002 - Happy Hunting! ==--
+[Tue Aug 21 14:33:19 2018] GUILD MOTD: Infestation - Monday,  8/20/18 Sol Ro @ 6PM
+[Tue Aug 21 14:33:23 2018] Nert tells the guild, 'get scm its good for all casters'
+[Tue Aug 21 14:33:34 2018] Adderall tells the guild, 'yah youre right'
+[Tue Aug 21 14:34:03 2018] Marc tells the guild, 'if it helps, i went scm on my dru first & it helped a ton, especially with fizzles'
+[Tue Aug 21 14:34:10 2018] Adderall tells the guild, 'yea'
+[Tue Aug 21 14:34:22 2018] Marc tells the guild, 'but fizzles drive me nuts ... (Pal main) so yea'
+[Tue Aug 21 14:34:42 2018] Marc tells the guild, 'i have crap gear, no ft, etc so that's how I did it'
+[Tue Aug 21 14:35:34 2018] Nert tells the guild, 'i went SCM then SCR then MC then MGB then SCRM then Totol Domination'
+[Tue Aug 21 14:36:14 2018] Nert tells the guild, 'after that started getting the less then usful ones'
+[Tue Aug 21 14:36:19 2018] You begin casting Illusion: Skeleton.
+[Tue Aug 21 14:36:19 2018] You feel different.
