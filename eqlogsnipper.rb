@@ -29,20 +29,30 @@ in_file.close
 =end
 
 
-##### Experimental section - Trying to search file with regex
-is_proper_date = false
+##### Experimental section - Trying to search file with regex - the key is caret!
+parameter = false
 File.open("explog.txt", 'r') do |file| # change processed.txt to explog.txt for testing purposes...
   file.readlines.each do |line|
 
-    if is_proper_date == true && (line.match(/^  (^)/) || line.strip.empty?)
-      is_proper_date = false
+    if parameter == true && (line.match(/^  (^)/) || line.strip.empty?)
+      parameter = false
     end
 
-    is_proper_date = true if line.match("Thu")
+    parameter = true if line.match("Thu")
 
-    puts line if is_proper_date == true
+    puts line if parameter == true
   end
 end
 
 
 ##### End experimental section
+# Need to add ability to write the selected lines to a separate file.
+
+def outflow(line_count, f)
+  puts "#{line_count}, #{f.gets.chomp}"
+end
+current_file = open(input_file)
+current_line = 1
+current_line += 1
+
+outflow(current_line, current_file)
