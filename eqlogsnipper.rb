@@ -40,7 +40,8 @@ File.open("explog.txt", 'r') do |file| # change processed.txt to explog.txt for 
 
     parameter = true if line.match("Thu")
 
-    puts line if parameter == true
+    puts line if parameter == true; # outflow goes here...
+
   end
 end
 
