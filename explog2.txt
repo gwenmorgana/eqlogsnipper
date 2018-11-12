@@ -1,4 +1,4 @@
-﻿[Wed Aug 08 23:58:38 2018] Wrong
+[Wed Aug 08 23:58:38 2018] Wrong
 [Wed Aug 08 23:59:17 2018] Wrong
 [Wed Aug 08 23:59:23 2018] Wrong
 [Wed Aug 08 23:59:36 2018] Wrong

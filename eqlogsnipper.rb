@@ -30,17 +30,21 @@ in_file.close
 
 
 ##### Experimental section - Trying to search file with regex - the key is caret!
+#def outflow(line_count, f)
+#  puts "#{f.gets.chomp}"
+#end
+
 parameter = false
-File.open("explog.txt", 'r') do |file| # change processed.txt to explog.txt for testing purposes...
+File.open("explog2.txt", 'r') do |file| # change processed.txt to explog.txt for testing purposes...
   file.readlines.each do |line|
 
     if parameter == true && (line.match(/^  (^)/) || line.strip.empty?)
       parameter = false
     end
 
-    parameter = true if line.match("Thu")
+    parameter = true if line.match("Wed")
 
-    puts line if parameter == true; # outflow goes here...
+    puts line if parameter == true# ; puts "Line was processed" # outflow goes here...
 
   end
 end
@@ -48,7 +52,7 @@ end
 
 ##### End experimental section
 # Need to add ability to write the selected lines to a separate file.
-
+=begin
 def outflow(line_count, f)
   puts "#{line_count}, #{f.gets.chomp}"
 end
@@ -57,3 +61,4 @@ current_line = 1
 current_line += 1
 
 outflow(current_line, current_file)
+=end
