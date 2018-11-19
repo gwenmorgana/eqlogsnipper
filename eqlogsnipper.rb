@@ -1,67 +1,45 @@
-# eqlog text sample formatting - CSV style using spaces
-# [Tue Aug 21 14:36:19 2018] You feel different.
+# This file is to experiment with Regex
+# [Tue Aug 21 14:36:19 2018] You feel different. - Example of log
 
-# =begin
-from_file, to_file = ARGV
+# adding basic prompt commands...
+# Program information.
+puts "EQ Log Snipper v1 - By Richard Grady"
 
-puts "Welcome to EQ Log Snipper v1"
-puts "By Richard Grady\n\n"
-#puts "Please enter your filename: (Use logsample.txt for debugging)"
-#from_file = $stdin.gets.chomp
-puts "You have chosen to open #{from_file} and copy it to #{to_file}"
+# establish a variable that loads the log file to be analyzed
+print "Please enter the name of the EQ Log to be searched (testing - use moo.txt in local directory): "
+baselog = $stdin.gets.chomp
 
+# establish a variable that tells the program what to search for
+puts "EQ Log Example - [Tue Aug 21 14:36:19 2018] You feel different."
+print "Please enter a search parameter: "
+search = $stdin.gets.chomp
 
-in_file = open(from_file)
-indata = in_file.read
+# establish a variable to name the file containing the search results
+print "Please choose a name for your output text file (testing - use cow.txt for output file): "
+filename = $stdin.gets.chomp
 
-puts "Log filesize is #{indata.length} bytes long."
+target = open(filename, 'w')
+target.truncate(0)
 
-puts "Does the output file exist? #{File.exist?(to_file)}"
-puts "Hit Enter to continue..."
-$stdin.gets
-
-out_file = open(to_file, 'w')
-out_file.write(indata)
-
-puts "File copy complete."
-out_file.close
-in_file.close
-# =end
-
-
-##### Experimental section - Trying to search file with regex - the key is caret!
-#def outflow(line_count, f)
-#  puts "#{f.gets.chomp}"
-#end
 
 parameter = false
-File.open("explog2.txt", 'r') do |file| # change processed.txt to explog.txt for testing purposes...
-  #file.readlines.each do |line|
-    #attr_reader :matches
-    #TIMESTAMP = %r{\[(?<wday>.{3})\s(?<month>.{3})\s(?<day>[0-9]{2})\s(?<hour>[0-9]{2}):(?<min>[0-9]{2}):(?<sec>[0-9]{2})\s(?<year>[0-9]{4})\]\s?}
+File.open(baselog, 'r') do |file| # variable obtained via $stdin
+  file.readlines.each do |line|
 
-    #if parameter == true && (line.match(/^  (.)/) || line.strip.empty?) -----OLD
-    if parameter == true && (line.match(//) || line.strip.empty?) # This enables a single day's search
+
+    if parameter == true && (line.match(//) || line.strip.empty?) # Prior entry using Caret was getting everything after the correct value - This is now corrected.
       parameter = false
     end
 
-    parameter = true if line.match("Wed")
+    parameter = true if line.match(search) # Now you can search for a particular date in the string. - Or hell, whatever you want!
+# if the above condition is met, process these next 2 lines of code
+# console output silenced by commenting line below
+    #puts line if parameter == true
+    # from here i can include conditionals based on the log's results.
 
-    puts line if parameter == true# ; puts "Line was processed" # outflow goes here...
+    target.write(line) if parameter == true
+
+
 
   end
 end
-
-
-##### End experimental section
-# Need to add ability to write the selected lines to a separate file.
-=begin
-def outflow(line_count, f)
-  puts "#{line_count}, #{f.gets.chomp}"
-end
-current_file = open(input_file)
-current_line = 1
-current_line += 1
-
-outflow(current_line, current_file)
-=end
