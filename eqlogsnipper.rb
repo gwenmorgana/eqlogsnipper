@@ -1,7 +1,7 @@
 # eqlog text sample formatting - CSV style using spaces
 # [Tue Aug 21 14:36:19 2018] You feel different.
 
-=begin
+# =begin
 from_file, to_file = ARGV
 
 puts "Welcome to EQ Log Snipper v1"
@@ -26,7 +26,7 @@ out_file.write(indata)
 puts "File copy complete."
 out_file.close
 in_file.close
-=end
+# =end
 
 
 ##### Experimental section - Trying to search file with regex - the key is caret!
@@ -37,10 +37,10 @@ in_file.close
 parameter = false
 File.open("explog2.txt", 'r') do |file| # change processed.txt to explog.txt for testing purposes...
   #file.readlines.each do |line|
-    attr_reader :matches
-    TIMESTAMP = %r{\[(?<wday>.{3})\s(?<month>.{3})\s(?<day>[0-9]{2})\s(?<hour>[0-9]{2}):(?<min>[0-9]{2}):(?<sec>[0-9]{2})\s(?<year>[0-9]{4})\]\s?}
+    #attr_reader :matches
+    #TIMESTAMP = %r{\[(?<wday>.{3})\s(?<month>.{3})\s(?<day>[0-9]{2})\s(?<hour>[0-9]{2}):(?<min>[0-9]{2}):(?<sec>[0-9]{2})\s(?<year>[0-9]{4})\]\s?}
 
-    #if parameter == true && (line.match(/^  (^)/) || line.strip.empty?)
+    if parameter == true && (line.match(/^  (.)/) || line.strip.empty?)
       parameter = false
     end
 
