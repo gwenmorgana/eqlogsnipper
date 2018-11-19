@@ -1,19 +1,20 @@
-# This file is to experiment with Regex 
-
+# This file is to experiment with Regex
+# [Tue Aug 21 14:36:19 2018] You feel different. - Example of log
 
 parameter = false
 File.open("explog2.txt", 'r') do |file| # change processed.txt to explog.txt for testing purposes...
   file.readlines.each do |line|
-    #attr_reader :matches
-    #TIMESTAMP = %r{\[(?<wday>.{3})\s(?<month>.{3})\s(?<day>[0-9]{2})\s(?<hour>[0-9]{2}):(?<min>[0-9]{2}):(?<sec>[0-9]{2})\s(?<year>[0-9]{4})\]\s?}
 
-    if parameter == true && (line.match(/^  (.)/) || line.strip.empty?)
+
+    if parameter == true && (line.match(//) || line.strip.empty?)
       parameter = false
     end
 
-    parameter = true if line.match("Wed")
-
-    puts line if parameter == true# ; puts "Line was processed" # outflow goes here...
+    parameter = true if line.match("Aug 09") # Now you can search for a particular date in the string.
+# if the above condition is met, process these next 2 lines of code
+    puts line if parameter == true
+    puts "Line was processed" if parameter == true # ability to write to file goes here.
+# from here i can include conditionals based on the log's results.
 
   end
 end
