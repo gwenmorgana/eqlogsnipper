@@ -3,9 +3,11 @@
 # adding basic prompt commands...
 # Program information.
 puts "EQ Log Snipper v1 - By Richard Grady"
+puts "Infestation of p2002.com"
+puts "github.com/gwenmorgana"
 
 # establish a variable that loads the log file to be analyzed
-print "Please enter the name of the EQ Log to be searched (testing - use moo.txt in local directory): "
+print "Please enter the name of the EQ Log to be searched: "
 baselog = $stdin.gets.chomp
 
 # establish a variable that tells the program what to search for
@@ -15,7 +17,7 @@ search = $stdin.gets.chomp
 
 # establish a variable to name the file containing the search results
 puts "Warning: Output file will be truncated!"
-print "Please choose a name for your output text file (testing - use cow.txt for output file): "
+print "Please choose a name for your output text file: "
 filename = $stdin.gets.chomp
 
 # file system prep, open output file and flag to allow writing of data.
