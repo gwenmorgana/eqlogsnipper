@@ -1,7 +1,7 @@
 # eqlogsnipper
 
 EQ Log Snipper - Version 1
-By Richard Grady
+
 Aka. Infestation of p2002.com
 github.com/gwenmorgana
 
