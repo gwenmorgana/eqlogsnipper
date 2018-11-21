@@ -2,8 +2,7 @@
 
 # adding basic prompt commands...
 # Program information.
-puts "EQ Log Snipper v1 - By Richard Grady"
-puts "Infestation of p2002.com"
+puts "EQ Log Snipper v1 - by Infestation of p2002.com"
 puts "github.com/gwenmorgana"
 
 # establish a variable that loads the log file to be analyzed
