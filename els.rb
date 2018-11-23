@@ -2,6 +2,18 @@
 
 # adding basic prompt commands...
 # Program information.
+#---------------------------
+# New Code Revisions and Features - Branch 1
+
+
+
+
+
+
+
+
+
+#------------------------
 puts "EQ Log Snipper v1 - by Infestation of p2002.com"
 puts "github.com/gwenmorgana"
 
