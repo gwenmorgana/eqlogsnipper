@@ -1,10 +1,7 @@
-# [Tue Aug 21 14:36:19 2018] You feel different. - Example of log
 
-# adding basic prompt commands...
-# Program information.
 #---------------------------
 # New Code Revisions and Features - Branch 2 added named "Feature-Revisions"
-
+require "./searchparam.rb"
 
 
 
@@ -14,6 +11,10 @@
 
 
 #------------------------
+# [Tue Aug 21 14:36:19 2018] You feel different. - Example of log
+
+# adding basic prompt commands...
+# Program information.
 puts "EQ Log Snipper v1 - by Infestation of p2002.com"
 puts "github.com/gwenmorgana"
 

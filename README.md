@@ -14,7 +14,7 @@ How to use:
 (This program is written in Ruby and requires the Ruby library to be installed on your particular system.)
 (You can get Ruby at https://www.ruby-lang.org/en/downloads/)
 
-1.) Execute els.rb from the command prompt
+1.) Execute els.rb from the command prompt or click on the els.rb icon in your OS's GUI. Make sure the ELS program is in the directory with the text files that you want analyzed.
 
 2.) The first prompt will ask you for the file name of the text log to be searched.
 
