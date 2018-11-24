@@ -3,6 +3,8 @@
 # New Code Revisions and Features - Branch 2 added named "Feature-Revisions"
 require "./searchparam.rb"
 
+# This line tests integration of the searchparam module.
+puts Searchparam::SEARCHLIMITER
 
 
 
@@ -65,3 +67,6 @@ File.open(baselog, 'r') do |file| # variable obtained via $stdin
 end
 # display the number of results to the console.
 puts "#{total_results} results have been found and exported into #{filename}"
+# Adding a 'pause' so the prompt window closing doesn't mask the result info from the enduser.
+puts "Press ANY key to close this program."
+$stdin.gets
